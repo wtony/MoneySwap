@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>How much am I paying?</title>
+    <style>
+		.buttonHolder{
+			text-align: center;
+		}
+		.title span{
+			display: block;
+			text-align: left;
+		}
+		#submitbutton{
+			margin-top: 2px;
+		}
+    </style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="popup.js"></script>
+  </head>
+  <body>
+	<form method = "POST">
+		Hours/day working:<br>
+		<input id= "hours" type="text" name ="Hours">
+		<br>
+		Pay/hour:<br>
+		<input id = "pays" type = "text" name = "Pay">
+		<br>
+	</form>
+	<div class = "buttonHolder">
+	<input type ="submit" id = "submitbutton" value ="Enter">
+	</div>
+	<div class = "title">
+	<span id = "display1">Current Hours: </span>
+	<span id = "display2">Current Pay: </span>
+	<span id = "display3">Total per Day: </span>
+	</div>
+  </body>
+</html>
+
